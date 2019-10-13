@@ -1,7 +1,8 @@
-/**
- * Toolkit styles
- */
+@import 'utilities';
 
-body {
-  font-family: sans-serif;
-}
+@import 'base';
+
+@import 'animations';
+
+@import 'components';
+
