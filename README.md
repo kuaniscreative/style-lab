@@ -1,28 +1,39 @@
 # Style Lab
 
 這裡記錄了UI練習結果，同時方便日後取用。:art:
+<br />
+<br />
 
-## Quick Start
+## 從零開始
 
-```shell
-$ curl -L https://github.com/fbrctr/fabricator/archive/master.tar.gz | tar zx --strip 1
-$ npm start
-```
+`npm start`安裝packages並啟動gulp的建置與監聽。
+<br />
+<br />
 
-## Documentation
+## 建立分類
 
-#### [Read the docs →](http://fbrctr.github.io/docs)
+1. 於`src/views/pages`中建立`yourTaxonomy.html`
+2. 於你建立的html中貼上以下code
+    ```handlebars
+    ---
+    fabricator: true
+    ---
 
-## Demo
+    <h1 data-f-toggle="labels">yourTaxonomy</h1>
 
-#### [Default Fabricator Instance →](http://fbrctr.github.io/demo)
+    {{#each materials.yourTaxonomy.items}}
 
-## Credits
+    {{> f-item this}}
 
-Created by [Luke Askew](http://twitter.com/lukeaskew).
+    {{/each}}
+    ```
+3. 以上的`yourTaxonomy`改成自己的分類名稱
+4. 於`src/materials`中建立資料夾並命名成你的分類名稱
+5. 資料夾內的html檔案名稱就會成為分類中的項目囉！:tada:
+<br />
+<br />
 
-Logo by [Abby Putinski](https://abbyputinski.com/)
 
-## License
 
-[The MIT License (MIT)](http://opensource.org/licenses/mit-license.php)
+   
+
