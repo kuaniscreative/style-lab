@@ -7,6 +7,7 @@
 ## 從零開始
 
 `npm start`安裝packages並啟動gulp的建置與監聽。
+`gulp --dev`啟動gulp監聽與建製。
 <br />
 <br />
 
